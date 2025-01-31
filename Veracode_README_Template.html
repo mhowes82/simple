@@ -1,0 +1,47 @@
+<p>// README template for Marketplaces and Communities, such as GitHub and GitLab. // Complete all Required sections and Delete any Optional sections you don’t need. // DO NOT CHANGE THE LICENSE SECTION.</p>
+
+<!-- The following <picture> element displays the Veracode logo for dark mode or light mode on sites, such as GitHub and GitLab, that support these modes. If the user switches to either mode, the appropriate logo automatically displays.
+If you upload this README to a site that only supports dark mode or light mode, but not both, or does not support either mode, the site displays the image defined for the <img> element (required).
+If necessary, you can remove or comment-out the <source> elements that do not apply to your site. -->
+
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://docs.veracode.com/img/Veracode_Docs_Logo_Dark_Mode.svg" height="200" width="200">
+    <source media="(prefers-color-scheme: light)" srcset="https://docs.veracode.com/img/Veracode_Docs_Logo_Light_Mode.svg" height="200" width="200">
+    <img alt="Veracode Logo" src="https://docs.veracode.com/img/Veracode_Docs_Logo_Light_Mode.svg" height="200" width="200">
+</picture>
+
+<h1 id="name-of-project">Name of project</h1>
+<p>// Required. Replace “Name of project” with the official Veracode product name. If you don’t know the official name for your product, contact the Product Marketing team.</p>
+<p>// EXAMPLE: Veracode for GitHub Actions</p>
+<h2 id="overview">Overview</h2>
+<p>// Required. Describe what this project is and why someone would use it. Begin with the product name, be brief, get to the point, and be sure to provide any important information users might need to know.</p>
+<p>// EXAMPLE: Veracode for GitHub Actions allows you to add Veracode Static Analysis and Pipeline Scan to your GitHub development pipeline. You can view any discovered flaws in your code on the Security tab on your GitHub repository.</p>
+<h2 id="before-you-begin">Before you begin</h2>
+<p>// Optional. Only include if there are critical/Veracode-specific requirements that prevent a user from installing or using this product.</p>
+<p>// EXAMPLE: You must have <a href="https://docs.veracode.com/r/c_api_credentials3">Veracode API credentials</a> to access Veracode.</p>
+<h2 id="installation">Installation</h2>
+<p>// Required. Procedure(s) for installing and configuring this product. If there are several installation and/or configuration steps, use a numbered list so that users can more easily follow the sequence. If the installation involves multiple tasks/procedures, use level 3 headings to group the tasks/procedures. To help users, particularly for something complicated, include screenshots.</p>
+<p>//EXAMPLE:</p>
+<h3>Clone this repository:</h3>
+<pre><code>git clone https://github.com/veracode/veracode-da-scanner-vars-example.git</code></pre>
+<h3 id="install-dependencies">Install dependencies:</h3>
+<pre><code>cd veracode-da-scanner-vars-example
+pip install -r requirements.txt</code></pre>
+<h2 id="usage">Usage</h2>
+<p>// Required. Explain how to use this product. Ideally, provide one or more commands or workflows for accomplishing one or more goals. The content will vary by product, but could include example commands, a list of parameters (required and/or optional), or procedures. Each parameter must include a description with possible values. For procedures, use numbered lists so that users can more easily and successfully complete the workflow.</p>
+<p>// EXAMPLE: If you have saved credentials as above you can add a new account-level scanner variable with:</p>
+<pre><code>python veracode-da-scanner-vars.py -k PASSWORD -v &#39;hzZK2HgBC5@[</code></pre>
+<p>You can then list the defined variables with:</p>
+<pre><code>python veracode-da-scanner-vars.py -l</code></pre>
+<p>Otherwise, you must set these environment variables before running <code>example.py</code>:</p>
+<pre><code>export VERACODE_API_KEY_ID=&lt;YOUR_API_KEY_ID&gt;
+export VERACODE_API_KEY_SECRET=&lt;YOUR_API_KEY_SECRET&gt;
+python veracode-da-scanner-vars-example.py -l</code></pre>
+<h2 id="contributing">Contributing</h2>
+<p>// Optional. This section is TBD.</p>
+<h2 id="license">License</h2>
+<p>//Optional. The MIT License for official Veracode products. Only include with either official Veracode products or reusable Veracode code samples. //The GitHub and GitLab UIs provide options for adding this MIT License. <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT license" /></a></p>
+<p>EXAMPLE: <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT license" /></a> See the <a href="https://github.com/veracode/.github/blob/main/LICENSE">LICENSE</a> for details.</p>
+<h2 id="contact">Contact</h2>
+<p>// ONLY include for official Veracode projects/products that our Veracode Community or Support personnel can actually support. DO NOT include for unofficial Veracode projects/products, such as personal projects, that Veracode cannot support.</p>
+<p>Visit the <a href="https://community.veracode.com/">Veracode Community</a>.</p>
